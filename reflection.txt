@@ -1,0 +1,23 @@
+Poll & Survey Builder - Reflection
+
+This project was developed as a complete web programming application for creating and managing online polls and surveys. The main goal of the project was to allow users to create polls with multiple questions, share voting links, collect responses, and view results in a clear and organized way.
+
+During the development process, I learned how to connect the frontend with the backend using JavaScript, PHP, and MySQL. I also learned how to structure a project into separate folders such as api, assets, config, database, and includes. This made the project easier to manage and understand.
+
+One of the most important parts of the project was the database design. The system stores polls, questions, answer options, voters, and votes in different related tables. This helped me understand how relational databases work and how foreign keys can be used to connect data together. The use of ON DELETE CASCADE also helped make the delete process more logical because when a poll is deleted, its related questions, options, and votes are removed automatically.
+
+Another important part was using JavaScript to create dynamic behavior. The Create Poll page allows the user to add questions, remove questions, add options, and remove options without reloading the page. This made the system more interactive and realistic. I also used JavaScript Fetch API to send poll data and vote data to PHP API files as JSON.
+
+The voting page was designed to support both single-choice and multiple-choice questions. I also added validation to make sure the user answers all questions before submitting. The project also prevents duplicate voting by using a voter token. This made the voting process more logical and helped avoid repeated votes from the same user.
+
+The results page was one of the most important pages in the project. It displays vote counts, percentages, total selections, and progress bars. This made the results easier to understand instead of showing only plain numbers. I also created an API endpoint that returns the results as JSON, which is useful for live updates and proves that the backend can provide structured data to the frontend.
+
+The Manage Polls page allows the user to view created polls, open the voting page, view results, and delete polls. This page was useful for managing the system from one place. The delete feature was tested carefully using a test poll before applying it to important data.
+
+Responsive design was also tested on three screen sizes: mobile, tablet, and desktop. The pages were tested to make sure the layout remains readable and usable on different screen sizes. The tested pages included the home page, create poll page, vote page, results page, and manage polls page.
+
+One challenge I faced was making sure the design looked clean while also keeping the system functional and logical. Another challenge was making sure that every button worked correctly and that the user could not perform illogical actions, such as submitting an empty poll or voting without answering all questions.
+
+If I had more time, I would improve the project by adding admin login and session protection, poll editing, search and filter options in the admin page, charts for results, and export functionality. Admin password protection was considered as a possible future enhancement, but it was not added in the current version because the main project requirements focused on poll creation, voting, results, APIs, database integration, and responsive design.
+
+Overall, this project helped me understand how a real web application is built using PHP, MySQL, JavaScript, HTML, and CSS. It also improved my understanding of frontend and backend communication, database relationships, API endpoints, validation, responsive design, and user experience.
